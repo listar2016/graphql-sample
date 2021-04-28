@@ -1,0 +1,8 @@
+mutation CreateCompany($name: String!, $industry: String!, $size: String!, $fundingStage: String!) {
+  createCompany(name: $name, industry: $industry, size: $size, fundingStage: $fundingStage) {
+    id
+    scenarios {
+      id
+    }
+  }
+}
